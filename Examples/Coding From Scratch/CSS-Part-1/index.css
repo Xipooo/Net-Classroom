@@ -1,0 +1,25 @@
+.paragraphRed {
+    color: #FF0000;
+}
+.paragraphBlue {
+    color: #0000FF;
+    font-size: 1.5em;
+}
+#paragraph3 {
+    font-size: 2em;
+}
+p {
+    font-size: 1em;
+    font-weight: 900;
+}
+p:hover {
+    color: yellowgreen;
+}
+.header :first-child {
+    color: blue;
+    font-size: x-large;
+}
+.header :nth-child(3){
+    color: red;
+    font-size: smaller;
+}
