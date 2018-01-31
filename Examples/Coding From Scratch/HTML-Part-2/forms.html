@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Part 2 - Forms</title>
+</head>
+
+<body>
+    <form action="./home.html" method="POST">
+        <div>
+            <label for="FirstName">* First Name:</label>
+            <input type="text" id="FirstName" name="firstName" placeholder="First Name" required>
+        </div>
+        <div>
+            <label for="LastName">Last Name:</label>
+            <input type="text" id="LastName" name="lastName" placeholder="Last Name">
+        </div>
+        <div>
+            <label for="Age">Age:</label>
+            <input name="age" id="Age" type="number" min="13" max="120">
+        </div>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="email">
+        </div>
+        <div>
+            <label for="Message">Message:</label>
+            <textarea rows="10" cols="50" name="message" id="Message" maxlength="200">Enter Text Here...</textarea>
+        </div>
+        <div>
+            <select name="color">
+                <option value="R">Red</option>
+                <option value="B">Blue</option>
+                <option value="W">White</option>
+            </select>
+        </div>
+        <div>
+            <label for="Red">Red</label>
+            <input type="checkbox" id="Red" name="ColorRed" value="Red">
+            <label for="Blue">Blue</label>
+            <input type="checkbox" id="Blue" name="ColorBlue" value="Blue">
+            <label for="White">White</label>
+            <input type="checkbox" id="White" name="ColorWhite" value="White">
+        </div>
+        <div>
+            <input type="radio" id="weatherSun" name="weather" value="sun">
+            <label for="weatherSun">Sun</label>
+            <input type="radio" id="weatherClouds" name="weather" value="clouds">
+            <label for="weatherClouds">Clouds</label>
+            <input type="radio" id="weatherRain" name="weather" value="rain">
+            <label for="weatherRain">Rain</label>
+        </div>
+        <div>
+            <input type="radio" id="myRadio" name="myExtraRadio" value="w000t">
+            <label for="myRadio">Extra Button</label>
+            <input type="radio" id="myOtherRadio" name="myExtraRadio" value="w000tzy">
+            <label for="myOtherRadio">Other Button</label>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
