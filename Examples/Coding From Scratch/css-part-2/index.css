@@ -1,0 +1,31 @@
+/* p {
+    font-family: sans-serif;
+} */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 500px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding-bottom: 25px;
+    border-right-width: 5px;
+    /*display: inline;*/
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 200px;
+}
+div.smallContainer {
+    height: 150px;
+    width: 250px;
+}
+.paragraphContainer {
+    float: left;
+}
+.divContainer {
+    float: right;
+}
