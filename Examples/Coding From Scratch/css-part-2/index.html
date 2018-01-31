@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- I need to have a good title -->
+    <title>CSS Part 2</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body>
+    <nav>
+        <li>
+            <a href="home.html">Home</a>
+        </li>
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+    </nav>
+    <div class="smallContainer divContainer">
+        <div class="text">Here's the body of our text.</div>
+    </div>
+
+    <p class="smallContainer paragraphContainer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed lacus diam. Aliquam vitae leo at dolor dapibus aliquet
+        at at lectus. Nulla sit amet imperdiet dolor. Maecenas rutrum feugiat felis, in accumsan est tristique ullamcorper.
+        Quisque porta, est nec pellentesque vestibulum, nulla nunc lobortis lorem, ac faucibus felis est ut elit. Donec feugiat
+        vestibulum quam quis ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi finibus urna tellus,
+        nec ornare risus ornare eget. Ut consectetur magna at arcu fringilla hendrerit. Sed rhoncus maximus mauris. Suspendisse
+        dignissim interdum libero et elementum. Vivamus pellentesque eget neque quis sodales. Nunc cursus turpis commodo,
+        congue libero sed, venenatis dui. Pellentesque ultrices egestas nibh id dictum. Aliquam et facilisis arcu. Integer
+        finibus, ligula a dictum facilisis, mi mauris vulputate justo, id viverra lorem nisi ac massa.</p>
+<!-- 
+    <p>Cras eget lobortis augue. Donec imperdiet, dui vel placerat mattis, metus tortor porta mauris, ac hendrerit nunc risus
+        viverra felis. Vivamus feugiat dictum lectus eget venenatis. Phasellus fermentum at ante at molestie. Etiam dolor
+        ante, rutrum fringilla maximus ullamcorper, malesuada eget magna. Nulla facilisis ex et purus tincidunt, quis mattis
+        lorem tempus. Vestibulum lacus lorem, ultricies sit amet tincidunt at, fermentum in ante. Sed in dictum quam. Nam
+        malesuada at lacus in dictum. Cras cursus arcu at mi dignissim tincidunt. Duis quis consequat magna. Curabitur fringilla
+        odio tempor convallis iaculis. Nullam ac tristique elit. In et erat nec leo porttitor tincidunt. Vivamus a ex gravida,
+        venenatis arcu eget, malesuada odio.
+    </p>
+
+    <p>Phasellus porta nunc a orci pretium ultricies. Vivamus eu ex tincidunt, tempor metus eget, varius orci. Donec convallis
+        mauris ut convallis posuere. Vivamus commodo fermentum justo sit amet hendrerit. Integer cursus enim quis faucibus
+        vehicula. Phasellus pharetra eros lorem, eget rhoncus metus volutpat vehicula. Donec neque lacus, sagittis sed ex
+        in, dignissim dignissim orci. Fusce interdum sit amet erat nec elementum. Etiam nec nunc nulla. Sed sed justo id
+        nisi sagittis blandit. Nulla feugiat ante ut dictum egestas. Sed magna ipsum, fermentum ac bibendum et, tristique
+        in nunc. Fusce ante felis, scelerisque eu velit sed, interdum fringilla velit. Proin vel congue ipsum. Donec erat
+        lectus, ornare at risus at, mollis mollis justo. Donec sollicitudin tempor mi, ac sagittis dolor ornare sed.</p>
+
+    <p>Sed bibendum, elit non consectetur luctus, felis ipsum tempor quam, a interdum urna justo et risus. Nam placerat nulla
+        nec erat eleifend pretium. Suspendisse efficitur semper nibh, ac iaculis dui ullamcorper nec. Praesent sagittis tortor
+        eu libero condimentum, nec semper augue convallis. In accumsan eu orci eleifend fermentum. Nunc semper elementum
+        orci eget malesuada. Proin sit amet elit ornare, tempus ante eget, porta sem. Praesent nec sapien eros. Duis eget
+        erat tempus, dictum tortor a, fermentum quam. Fusce rutrum efficitur nisl quis iaculis. Quisque varius, urna ut vulputate
+        hendrerit, magna odio interdum velit, nec iaculis diam justo ac dolor. Donec neque libero, tincidunt vitae magna
+        et, vestibulum interdum nulla. Vestibulum euismod quis massa et elementum. Etiam placerat vulputate lorem. Phasellus
+        iaculis tortor ipsum, in ultrices massa egestas et.</p>
+
+    <p>Sed vel massa sed enim suscipit aliquam non ut enim. In enim augue, pretium eget vehicula eu, viverra sit amet tortor.
+        Maecenas rhoncus, nulla quis rutrum venenatis, lacus metus hendrerit justo, ut fermentum lacus erat ut dui. Mauris
+        in tristique erat, malesuada iaculis nisi. Proin a mauris sapien. Phasellus condimentum rhoncus nisl vel porta. Phasellus
+        quis nulla ut ex viverra porta. Proin fermentum bibendum velit iaculis sollicitudin. Aliquam arcu massa, dignissim
+        eget lacus a, lobortis ultrices orci. Sed id quam volutpat, sollicitudin ex et, consequat quam. Duis tempus, est
+        aliquam dignissim imperdiet, eros ligula ornare ligula, ut ultrices dolor lacus eu ipsum. Aenean vestibulum elit
+        eget interdum rhoncus. Quisque magna nisl, faucibus a malesuada id, ultricies eu quam. Phasellus congue elementum
+        augue quis aliquam.</p>
+
+    <p>Morbi molestie, orci quis varius condimentum, diam orci pretium velit, sed sodales dui nulla ut tellus. Sed a lacus quis
+        urna euismod lacinia. Quisque id erat at tellus gravida maximus. In ullamcorper felis lectus. Proin et ante id felis
+        suscipit dapibus. Donec blandit ultrices turpis, nec consequat nisl. In porttitor augue nec dolor blandit maximus.
+        Ut eu volutpat lorem. Sed sodales purus non eros euismod, non tempus neque luctus.</p>
+
+    <p>Nulla sem dui, feugiat eu tincidunt blandit, consequat id est. Nullam id odio lectus. Morbi fringilla a magna eget fermentum.
+        Cras dolor neque, eleifend sed turpis viverra, tempor consectetur orci. Donec et turpis in diam auctor efficitur
+        sit amet a odio. Nullam mattis justo nulla, et faucibus nisi sagittis sed. Maecenas ultricies libero at dolor tempus
+        faucibus. Maecenas eu odio vel tellus sodales cursus. Phasellus sagittis, ante at dapibus fringilla, felis tellus
+        hendrerit sapien, venenatis mattis purus nulla ut nisi. Nullam tristique leo eleifend, blandit odio ut, porta urna.
+        Nam cursus enim odio, et vestibulum magna blandit in. Donec volutpat sapien leo, et venenatis arcu aliquam at. Mauris
+        et nisi nec neque iaculis hendrerit finibus vitae ante. Curabitur varius vel neque feugiat finibus. Fusce sollicitudin
+        nulla bibendum justo tristique feugiat.</p>
+
+    <p>Aliquam scelerisque odio erat, id porta magna placerat eu. Pellentesque massa tortor, volutpat eu gravida consectetur,
+        eleifend in ipsum. Sed quis placerat sem. Nunc vel velit vestibulum, gravida felis in, tincidunt est. Praesent pharetra
+        fringilla dui at mollis. Nullam leo purus, facilisis vel lacinia sed, eleifend id libero. Fusce id ullamcorper libero,
+        sed placerat justo. Nulla lorem sem, rhoncus a sapien quis, tristique gravida velit. Phasellus accumsan nisi et sapien
+        ullamcorper elementum ac sed nunc. Sed diam mi, maximus eu iaculis non, rutrum a elit. Nullam vitae ornare orci,
+        eget luctus felis.</p>
+
+    <p>Quisque vel dignissim erat, id consectetur felis. Nam feugiat risus nec ipsum eleifend, vitae luctus diam consequat.
+        Praesent vestibulum dui nulla, quis malesuada tortor semper sit amet. Donec eget lobortis nisl. Aliquam ultrices
+        magna ac lobortis lacinia. Fusce tincidunt massa vel ipsum tempus interdum. Suspendisse convallis magna non lectus
+        volutpat, sit amet feugiat ex faucibus.</p>
+
+    <p>Sed lectus orci, tincidunt eu libero vitae, porta mollis sem. Curabitur lacinia justo ornare odio consequat, sit amet
+        gravida urna posuere. Phasellus a pretium sem, et bibendum ex. Aenean cursus sit amet nibh ut varius. Sed vestibulum
+        vel diam vel pretium. Quisque eleifend dictum tellus, ut iaculis libero dapibus in. Cras a volutpat neque, id lobortis
+        leo. Mauris commodo aliquet nulla, et posuere dui porta a. Donec ac elit erat. Mauris ac consectetur neque, sit amet
+        scelerisque quam. Aenean condimentum tortor ac ligula pellentesque, ac dapibus augue condimentum. Curabitur malesuada
+        odio in cursus accumsan. Curabitur egestas, nisl id dapibus vehicula, elit velit facilisis erat, ac sagittis nibh
+        ex id mi. In hac habitasse platea dictumst.</p> -->
+</body>
+
+</html>
