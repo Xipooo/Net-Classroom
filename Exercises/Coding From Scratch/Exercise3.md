@@ -1,6 +1,6 @@
 # Exercise 3
 <ul>
-    <li>Create a new branch in your local repository called Exercise3</li>
+    <li>Create a new branch in your local repository called CFS-Exercise3</li>
     <li>Create a new subfolder in your GameOfThronesApp folder called FrontEnd</li>
     <li>Create a new HTML page in your FrontEnd folder</li>
     <ul>

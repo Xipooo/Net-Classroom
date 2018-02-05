@@ -1,6 +1,6 @@
 # Exercise 4
 <ul>
-    <li>Create a new branch in your local repository called Exercise4</li>
+    <li>Create a new branch in your local repository called CFS-Exercise4</li>
     <li>Create a new HTML page in your FrontEnd folder called houses.html</li>
     <li>Add a header with the text “Game Of Thrones Houses”</li>
     <li>Add a table with at least 4 columns with different Game of Thrones Houses and at least 2 rows of characters of each house</li>

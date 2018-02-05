@@ -1,6 +1,6 @@
 # Exercise 6
 <ul>
-    <li>Create a new branch in your local repository called Exercise6</li>
+    <li>Create a new branch in your local repository called CFS-Exercise6</li>
     <li>Create a new subfolder under your FrontEnd folder called styles</li>
     <li>Create a new file called styles.css in your styes folder and link it to both your index.html and houses.html documents.</li>
     <li>Change all td tags to be the color grey.</li>

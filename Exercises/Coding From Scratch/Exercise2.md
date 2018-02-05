@@ -5,7 +5,7 @@
         <li>Generate the README.md file when you create the repo</li>
     </ul>
     <li>Clone the repository to your <em>Projects folder</em> (this should create a subfolder of the same name as the repo)</li>
-    <li>Create a new branch in your local repository called <em>Exercise2</em></li>
+    <li>Create a new branch in your local repository called <em>CFS-Exercise2</em></li>
     <li>Use the terminal to open the <em>GameOfThronesApp</em> folder in your code editor</li>
     <li>Modify the <em>README.md</em> file to include the following text</li>
     <ul>

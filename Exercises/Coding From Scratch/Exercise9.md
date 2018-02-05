@@ -1,6 +1,6 @@
 # Exercise 9
 <ul>
-    <li>Create a new branch in your local repository called Exercise9</li>
+    <li>Create a new branch in your local repository called CFS-Exercise9</li>
     <li>Create a subfolder under your FrontEnd folder called scripts</li>
     <li>Create an index.js file inside the scripts folder</li>
     <li>In your index.html page add a script tag to the bottom of the body element with the index.js file as a source</li>
