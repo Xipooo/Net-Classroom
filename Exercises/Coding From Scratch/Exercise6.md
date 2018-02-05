@@ -1,7 +1,8 @@
 # Exercise 6
 <ul>
     <li>Create a new branch in your local repository called Exercise6</li>
-    <li>Create a new file called styles.css and link it to both your index.html and houses.html documents.</li>
+    <li>Create a new subfolder under your FrontEnd folder called styles</li>
+    <li>Create a new file called styles.css in your styes folder and link it to both your index.html and houses.html documents.</li>
     <li>Change all td tags to be the color grey.</li>
     <li>Make all of the text in the last column of your houses table appear in green.</li>
     <li>Make the last item of the last column in the houses table appear in black.</li>

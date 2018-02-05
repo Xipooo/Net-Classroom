@@ -1,7 +1,7 @@
 # Exercise 5
 <ul>
     <li>Create a new branch in your local repository called Exercise5</li>
-    <li>Create a new html page called newGOTCharacter.html
+    <li>Create a new html page in the FrontEnd folder called newGOTCharacter.html
     <li>Add a form to the page with the following:</li>
     <ul>
         <li>An input for a new GOT Character Name (it should be a required field)</li>

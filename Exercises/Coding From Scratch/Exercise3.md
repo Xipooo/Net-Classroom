@@ -1,7 +1,8 @@
 # Exercise 3
 <ul>
     <li>Create a new branch in your local repository called Exercise3</li>
-    <li>Create a new HTML page in your Projects\GameOfThronesApp folder</li>
+    <li>Create a new subfolder in your GameOfThronesApp folder called FrontEnd</li>
+    <li>Create a new HTML page in your FrontEnd folder</li>
     <ul>
         <li>Name it index.html Give it a title of “Game Of Thrones Characters” Include an h2 tag with “GOT Characters” followed by…</li>
         <li>Include a numbered list of at least 5 GOT Characters in alphabetical order</li>
