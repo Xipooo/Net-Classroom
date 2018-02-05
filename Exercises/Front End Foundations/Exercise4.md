@@ -1,12 +1,19 @@
 # Exercise 4
 <ul>
-    <li>Create a new branch in your local repository called <strong>Exercise4</strong></li>
-    <li>Delete the npminitdemo folder</li>
-    <li>Create an <strong>index.html</strong> file in your <em>FrontEndFoundations</em> folder</li>
-    <li>Add the Doctype, html, head, and body tags to your index.html</li>
-    <li>Create subfolder in your FrontEndFoundations folder called <strong>scripts</strong></li>
-    <li>Create an <strong>index.js</strong> file in your <em>scripts</em> subfolder</li>
-    <li>Use the script tag in your <em>index.html</em> file to link your <em>index.js</em> file to <em>index.html</em></li>
+    <li>Create a new branch in your local repository called <strong>FEF-Exercise4</strong></li>
+    <li>In your index.js file do the following:</li>
+    <ul>
+        <li>Add a constant called hoursInDay and assign it the value of 24</li>
+        <li>Add a variable using the let keyword called GOTcharacter</li>
+        <li>Assign to the GOTcharacter variable an object literal with these properties and values</li>
+        <ul>
+            <li>Name: "Jaime Lannister"</li>
+            <li>House: "Lannister"</li>
+            <li>ChildCount: 3</li>
+        </ul>
+        <li>Use the console.log method to write the value of GOTcharacter to the console window</li>
+        <li>Use the console.log method to write the value of hoursInDay to the console window</li>
+    </ul>
     <li>Commit and merge your changes to your local repository and Github</li>
     <li><em><strong>Check if any fellow students need help with the exercise</strong></em></li>
 </ul>
