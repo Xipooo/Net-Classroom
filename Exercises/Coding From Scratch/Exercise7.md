@@ -2,6 +2,7 @@
 <ul>
     <li>Create a new branch in your local repository called Exercise7</li>
     <li>Create a nav tag in your index.html with a link to your houses.html and to your newGOTCharacter.html</li>
+    <li>Move the HBO website link to the nav element</li>
     <li>Pin the navigation to the top of the page using CSS</li>
     <li>Change the background color of the table in your houses.html document</li>
     <li>Change the font size of the list items on the Stark Direwolves to 1.3em.</li>
