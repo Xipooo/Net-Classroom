@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Order Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts/order.js"></script>
+</head>
+<body>
+    <h1>Welcome to the Pre-Order Form!</h1>
+    <h3>Fill out the form below.</h3>
+    <form>
+        <label for="firstName">First Name: </label>
+        <input type="text" id="firstName" />
+        <br />
+        <label for="phoneNumber">Phone Number: </label>
+        <input type="number" id="phoneNumber" />
+        <br />
+        <label for="email">Email: </label>
+        <input type="email" id="email" />
+    </form>
+    <button onclick="addUser()">Submit</button>
+
+    <h2>
+        <span id="fName"></span>
+    </h2>
+    <p id="thankYou"></p>
+    <p id="reachYou"></p>
+    <p id="pNumber"></p>
+    <p id="emailAdd"></p>
+    <p id="sincerely"></p>
+    <p id="teamName"></p>
+</body>
+</html>
