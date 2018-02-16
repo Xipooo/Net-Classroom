@@ -1,6 +1,7 @@
 import { createStore } from 'redux';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider, connect } from 'react-redux';
 
 const initialState = { value: 0 };
 
@@ -28,30 +29,20 @@ const reducer = (state = initialState, action) => {
 
 const store = createStore(reducer);
 
-// store.dispatch({ type: "INCREMENT" });
-// // console.log("state at start: ", store.getState());
-// store.dispatch({ type: "INCREMENT" });
-// store.dispatch({ type: "RESET" });
-// // console.log("state at start: ", store.getState());
-// store.dispatch({ type: "INCREMENT" });
-// // console.log("state at start: ", store.getState());
-// store.dispatch({ type: "DECREMENT" });
-// // console.log("state at start: ", store.getState());
-
-const render = () => {
-    ReactDOM.render(
-        <Counter
-            value={store.getState().value}
-            onIncrement={() => store.dispatch({ type: 'INCREMENT', payload: 5 })}
-            onDecrement={() => store.dispatch({ type: 'DECREMENT', payload: 2 })}
-            onReset={() => store.dispatch({ type: 'RESET' })}
-        />,
-        document.getElementById('root')
-    )
+const mapStateToProps = (state) => { return { value: state.value } };
+const mapDispatchToProps = (dispatch) => {
+    return {
+        onIncrement: () => dispatch({ type: 'INCREMENT', payload: 5 }),
+        onDecrement: () => dispatch({ type: 'DECREMENT', payload: 2 }),
+        onReset: () => dispatch({ type: 'RESET' })
+    }
 }
-store.subscribe(
-    () => {
-        console.log(store.getState());
-        render();
-    });
-render();
+
+const ConnectedCounter = connect(mapStateToProps, mapDispatchToProps)(Counter);
+
+ReactDOM.render(
+    <Provider store={store}>
+        <ConnectedCounter />
+    </Provider>,
+    document.getElementById('root')
+);
