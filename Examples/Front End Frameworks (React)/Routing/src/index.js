@@ -1,23 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Home, Mine, Search } from './screens/index.js';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
-const Index = (props) => {
-    switch (props.pathname){
-        case "/search":
-            return <Search />;
-        case "/mine":
-            return <Mine />;
-        default:
-            return <Home />;
-    }
-}
+const reducer = (state, action) => {
+    return state;
+} 
 
-let pathname = window.location.pathname;
-
-ReactDOM.render(
-    <Index pathname={pathname} />,
-    document.getElementById('root')
+const Index = ({ store }) =>
+(
+    <Provider store={store}>
+        <BrowserRouter>
+            <div>
+                <Route path="/mine" component={Mine} />
+                <Route path="/search" component={Search} />
+                <Route path="/" component={Home} exact/>
+            </div>
+        </BrowserRouter>
+    </Provider>
 )
 
-window.onpopstate = () => { pathname = window.location.pathname; }
+ReactDOM.render(
+    <Index store={createStore(reducer)}/>,
+    document.getElementById('root')
+);
