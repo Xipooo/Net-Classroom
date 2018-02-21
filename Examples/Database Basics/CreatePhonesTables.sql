@@ -1,0 +1,12 @@
+USE wozudemo;
+
+CREATE TABLE Phones (
+	Id INT AUTO_INCREMENT PRIMARY KEY,
+    PhoneNumber VARCHAR(15) NOT NULL,
+    PhoneTypeId INT
+);
+
+CREATE TABLE PhoneTypes (
+	Id INT AUTO_INCREMENT PRIMARY KEY,
+    PhoneType VARCHAR(20) NOT NULL
+);
