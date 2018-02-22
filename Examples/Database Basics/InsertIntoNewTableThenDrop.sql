@@ -16,9 +16,9 @@ FROM students
 		ON students_phones.PhoneId = phones.id
 GROUP BY students.id, students.firstname, students.lastName;
 
-UPDATE temp_PhoneCount
-SET PhoneAmount = PhoneAmount + 1
-WHERE PhoneAmount > 0 AND Id > 0;
+#UPDATE temp_PhoneCount
+#SET PhoneAmount = PhoneAmount + 1
+#WHERE PhoneAmount > 0 AND Id > 0;
 
 SELECT FirstName, LastName, PhoneAmount
 FROM temp_PhoneCount;
