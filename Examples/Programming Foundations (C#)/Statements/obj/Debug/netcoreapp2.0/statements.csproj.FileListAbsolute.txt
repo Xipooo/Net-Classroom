@@ -1,0 +1,10 @@
+C:\projects\net-classroom\examples\Programming foundations (c#)\statements\bin\Debug\netcoreapp2.0\statements.deps.json
+C:\projects\net-classroom\examples\Programming foundations (c#)\statements\bin\Debug\netcoreapp2.0\statements.runtimeconfig.json
+C:\projects\net-classroom\examples\Programming foundations (c#)\statements\bin\Debug\netcoreapp2.0\statements.runtimeconfig.dev.json
+C:\projects\net-classroom\examples\Programming foundations (c#)\statements\bin\Debug\netcoreapp2.0\statements.dll
+C:\projects\net-classroom\examples\Programming foundations (c#)\statements\bin\Debug\netcoreapp2.0\statements.pdb
+C:\projects\net-classroom\examples\Programming foundations (c#)\statements\obj\Debug\netcoreapp2.0\statements.csproj.CoreCompileInputs.cache
+C:\projects\net-classroom\examples\Programming foundations (c#)\statements\obj\Debug\netcoreapp2.0\statements.AssemblyInfoInputs.cache
+C:\projects\net-classroom\examples\Programming foundations (c#)\statements\obj\Debug\netcoreapp2.0\statements.AssemblyInfo.cs
+C:\projects\net-classroom\examples\Programming foundations (c#)\statements\obj\Debug\netcoreapp2.0\statements.dll
+C:\projects\net-classroom\examples\Programming foundations (c#)\statements\obj\Debug\netcoreapp2.0\statements.pdb
