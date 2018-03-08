@@ -37,7 +37,12 @@ namespace WozUCoreDemo
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
+            app.UseMvc(
+                (config) =>
+                {
+                    config.MapRoute("Default", "{controller=HomePage}/{action=Index}");
+                }
+            );
         }
     }
 }
