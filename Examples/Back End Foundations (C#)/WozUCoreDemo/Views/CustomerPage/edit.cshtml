@@ -1,31 +1,16 @@
-@model WozUCoreDemo.Models.Customer
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Edit Customer</title>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Edit Customer</h1>        
-            <div>
-                <form method="POST">
-                    <input type="hidden" value="@Model.Id"/>
-                    <dl>
-                        <dt>First Name: </dt>
-                        <dd><input name="FirstName" value="@Model.FirstName"/></dd>
-                        <dt>Last Name: </dt>
-                        <dd><input name="LastName" value="@Model.LastName"/></dd>
-                        <dt>Email: </dt>
-                        <dd><input name="Email" value="@Model.Email" /></dd>
-                        <dd><input type="submit" value="Submit" /></dd>
-                    </dl>
-                </form>
-            </div>
-        </div>
-    </body>
-</html>
+@model Customer
+<h1>Edit Customer</h1>        
+<div>
+    <form asp-controller="CustomerPage" asp-action="Update" asp-anti-forgery="true">
+        <input type="hidden" asp-for="Id"/>
+        <dl>
+            <dt><label asp-for="FirstName"></label>: </dt>
+            <dd><input asp-for="FirstName"/></dd>
+            <dt><label asp-for="LastName"></label>: </dt>
+            <dd><input asp-for="LastName"/></dd>
+            <dt><label asp-for="Email"></label>: </dt>
+            <dd><input asp-for="Email" /></dd>
+            <dd><input class="btn btn-primary" type="submit" value="Submit" /></dd>
+        </dl>
+    </form>
+</div>

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using WozUCoreDemo.Models;
+using WozUCoreDemo.ViewModels;
 
 namespace WozUCoreDemo.Controllers
 {
@@ -15,8 +16,10 @@ namespace WozUCoreDemo.Controllers
         }
 
         public IActionResult Index(){
-            List<Customer> customers = _context.Customers.ToList();
-            return View(customers);
+            var vm = new CustomerPageIndexViewModel {
+                Customers = _context.Customers.ToList()
+            };
+            return View(vm);
         }
 
         [HttpGet]
@@ -26,7 +29,8 @@ namespace WozUCoreDemo.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(Customer customer){
+        [ValidateAntiForgeryToken]
+        public IActionResult Update(Customer customer){
             Customer oldCustomer = _context.Customers.FirstOrDefault(c => c.Id == customer.Id);
             oldCustomer.FirstName = customer.FirstName;
             oldCustomer.LastName = customer.LastName;

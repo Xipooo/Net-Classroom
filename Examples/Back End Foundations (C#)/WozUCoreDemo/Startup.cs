@@ -43,7 +43,7 @@ namespace WozUCoreDemo
             app.UseMvc(
                 (config) =>
                 {
-                    config.MapRoute("Default", "{controller=HomePage}/{action=Index}");
+                    config.MapRoute("Default", "{controller=HomePage}/{action=Index}/{id?}");
                 }
             );
         }
