@@ -32,10 +32,13 @@ namespace WozUCoreDemo
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            Initialize(app.ApplicationServices);
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseStaticFiles();
 
             app.UseMvc(
                 (config) =>
@@ -43,6 +46,26 @@ namespace WozUCoreDemo
                     config.MapRoute("Default", "{controller=HomePage}/{action=Index}");
                 }
             );
+        }
+
+        public static void Initialize(IServiceProvider serviceProvider){
+            var context = serviceProvider.GetRequiredService<WozUContext>();
+            if (!context.Customers.Any()){
+                context.Customers.Add(
+                    new Customer() {
+                        FirstName = "Frodo",
+                        LastName = "Baggins",
+                        Email = "frodo@TheShire.net"
+                });
+                context.Customers.Add(
+                    new Customer() {
+                        FirstName = "Steve",
+                        LastName = "Bishop",
+                        Email = "steve.bishop@Woz-U.com"
+                    }
+                );
+                context.SaveChanges();
+            }
         }
     }
 }
