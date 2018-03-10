@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using WozUCoreDemo.Models;
+using Pomelo.EntityFrameworkCore.MySql;
 
 namespace WozUCoreDemo
 {
@@ -25,7 +26,8 @@ namespace WozUCoreDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<WozUContext>(options => options.UseInMemoryDatabase("WozUDatabase"));
+            services.AddDbContext<WozUContext>(options => 
+                options.UseMySql("server=localhost;database=wozucoredemo;uid=coreuser;pwd=Password1"));
             services.AddMvc();
         }
 
@@ -48,23 +50,35 @@ namespace WozUCoreDemo
             );
         }
 
-        public static void Initialize(IServiceProvider serviceProvider){
-            var context = serviceProvider.GetRequiredService<WozUContext>();
-            if (!context.Customers.Any()){
-                context.Customers.Add(
-                    new Customer() {
-                        FirstName = "Frodo",
-                        LastName = "Baggins",
-                        Email = "frodo@TheShire.net"
-                });
-                context.Customers.Add(
-                    new Customer() {
-                        FirstName = "Steve",
-                        LastName = "Bishop",
-                        Email = "steve.bishop@Woz-U.com"
-                    }
-                );
-                context.SaveChanges();
+        public static void Initialize(IServiceProvider serviceProvider)
+        {
+            try
+            {
+                var context = serviceProvider.GetRequiredService<WozUContext>();
+                if (!context.Customers.Any())
+                {
+                    context.Customers.Add(
+                        new Customer()
+                        {
+                            FirstName = "Frodo",
+                            LastName = "Baggins",
+                            Email = "frodo@TheShire.net"
+                        });
+                    context.Customers.Add(
+                        new Customer()
+                        {
+                            FirstName = "Steve",
+                            LastName = "Bishop",
+                            Email = "steve.bishop@Woz-U.com"
+                        }
+                    );
+                    context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Could not seed data");
+                Console.WriteLine(ex.Message);
             }
         }
     }
